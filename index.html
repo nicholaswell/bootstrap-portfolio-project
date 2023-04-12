@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Travel</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="enabler.js" defer></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top">
+            <a class="navbar-brand" href="#">SmartTravel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary shadow p-5 text-center text-light">
+            <h1 class="display-1">SmartTravel</h1>
+            <h5>Travel For Everyone</h5>
+            <button type="button" class="btn btn-primary mt-3 border border-light" data-bs-toggle="modal" data-bs-target="#learnMoreModal">
+                Learn More
+            </button>
+        </div>
+        <div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreModalLabel" aria-hidden="true" data-backdrop="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="learnMoreModalLabel">Who Are We?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>TravelSmart is a travel agency that provides exceptional service and innovative solutions for clients seeking sustainable and authentic travel experiences.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-3">
+            <div class="container">
+                <h2 class="text-center display-5 m-5">Our 2023 Travel Picks</h2>
+                <!-- Start Row 1 -->
+                <div
+                    class="row">
+                    <!-- Start Column 1 -->
+                    <div class="col-lg-6 carousel-area">
+                        <div id="course_carousel" class="carousel carousel-light" data-bs-ride="carousel" data-bs-interval="4000">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="1" class="active"></button>
+                                <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="2" class="active"></button>
+                                <button type="button" data-bs-target="#course-carousel" data-bs-slide-to="3" class="active"></button>
+                            </div>
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./images/edinburgh.jpg" alt="Edinburgh"/>
+                                    <div class="carousel-caption">
+                                        <h1>Edinburgh, Scotland</h1>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/honolulu.jpg" alt="Honolulu"/>
+                                    <div class="carousel-caption">
+                                        <h2>Honolulu, Hawaii</h2>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/phuket.jpg" alt="Phuket"/>
+                                    <div class="carousel-caption">
+                                        <h2>Phuket Island, Thailand</h2>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/bali.jpg" alt="Bali"/>
+                                    <div class="carousel-caption">
+                                        <h2>Bali, Indonesia</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#course_carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">
+                                    Previous
+                                </span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#course_carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">
+                                    Next
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- End Column 1 -->
+                    <!-- Start Column 2 -->
+                    <div class="col-lg-6 accordion-area">
+                        <div class="accordion" id="accordionRecipes">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header text-center" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Edinburgh, Scotland
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="Chicken Marsala" data-bs-parent="#accordionRecipes">
+                                    <div class="accordion-body">
+                                        Edinburgh is the capital of Scotland, known for its rich history, stunning architecture, and vibrant cultural scene. It's home to Edinburgh Castle, famous festivals, museums, and charming pubs and restaurants.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Honolulu, Hawaii
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="Chicken Piccata" data-bs-parent="#accordionRecipes">
+                                    <div class="accordion-body">
+                                        Honolulu is the capital city of Hawaii, located on the island of Oahu. It's known for its beautiful beaches, warm weather, and vibrant culture, offering visitors a tropical paradise to explore.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Phuket Island, Thailand
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="Bolognese Italia" data-bs-parent="#accordionRecipes">
+                                    <div class="accordion-body">
+                                        Phuket Island is a popular tourist destination located in southern Thailand. Known for its stunning beaches, vibrant nightlife, and rich cultural heritage, it's a must-visit destination for anyone traveling to the region.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Bali, Indonesia
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="Shrimp Scampi" data-bs-parent="#accordionRecipes">
+                                    <div class="accordion-body">
+                                        Bali is an Indonesian island known for its beautiful beaches, volcanic mountains, and rich culture. With its stunning temples, lush landscapes, and warm hospitality, Bali is a top destination for travelers seeking a tropical paradise.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Column 2 -->
+                </div>
+                <!-- End Row 1 -->
+                <h2 class="text-center display-5 m-5">Why Travel With Us?</h2>
+                <!-- Start Row 2 -->
+                <div
+                    class="row">
+                    <!-- Start Column 1 -->
+                    <div class="col-lg-6 img-area">
+                        <img src="images/travel.jpg" class="img-fluid rounded">
+                    </div>
+                    <!-- End Column 1 -->
+                    <!-- Start Column 2 -->
+                    <div class="col-lg-6 button-area">
+                        <div class="button-container m-5">
+                            <button class="btn btn-lg btn-secondary d-block" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Cost" data-bs-content="Traveling with us means affordable prices, saving you money on flights, accommodation, and activities, and making your travel experience more accessible.">
+                                <span>
+                                    <i class="bi bi-cash-stack"></i>
+                                </span>
+                                <span style="margin-left: 30px">Cost</span>
+                            </button>
+                            <button class="btn btn-lg btn-secondary d-block mt-4" class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Destinations" data-bs-content="Traveling with us means a wide variety of destinations to choose from, catering to every traveler's unique preferences and interests.">
+                                <span>
+                                    <i class="bi bi-geo-alt"></i>
+                                </span>
+                                <span style="margin-left: 30px">Destinations</span>
+                            </button>
+                            <button class="btn btn-lg btn-secondary d-block mt-4" class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Travel Plans" data-bs-content="Traveling with us means a variety of travel plans for different budgets, catering to every traveler's financial needs and preferences.">
+                                <span>
+                                    <i class="bi bi-card-list"></i>
+                                </span>
+                                <span style="margin-left: 30px">Travel Plans</span>
+                            </button>
+                            <button class="btn btn-lg btn-secondary d-block mt-4" class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Easier Planning" data-bs-content="Traveling with us means easier planning, with tools and resources to help travelers book flights, accommodations, transportation, and activities with no issues.">
+                                <span>
+                                    <i class="bi bi-calendar-check"></i>
+                                </span>
+                                <span style="margin-left: 30px">Easier Planning</span>
+                            </button>
+                            <button class="btn btn-lg btn-secondary d-block mt-4" class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="More Access" data-bs-content="With our exclusive partnerships, we offer travelers access to luxury hotels at more affordable prices, making high-end accommodations more accessible.">
+                                <span>
+                                    <i class="bi bi-universal-access-circle"></i>
+                                </span>
+                                <span style="margin-left: 30px">More Access</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- End Column 2 -->
+                </div>
+                <!-- End Row 2 -->
+                <h2 class="text-center display-5 mt-4">Ready to Make It Official?</h2>
+                <h5 class="text-center">Enter your email to sign-up for more details on how to get started with TravelSmart today!</h5>
+                <!-- Start Row 3 -->
+                <div
+                    class="row d-flex justify-content-center">
+                    <!-- Start Column 1 -->
+                    <div class="col-lg-3 mt-3">
+                        <div class="tooltip-area">
+                            <div>
+                                <form>
+                                    <div class="mb-4 input-group">
+                                        <span class="input-group-text">
+                                            <i class="bi bi-envelope-fill"></i>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter E-Mail Here"/>
+                                        <span class="input-group-text text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter Your E-Mail">
+                                            <i class="bi bi-question-circle"></i>
+                                        </span>
+                                        <button class="btn d-inline-block bg-primary text-white">Submit</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Column 1 -->
+                </div>
+                <!-- End Row 3 -->
+            </div>
+        </div>
+        <div class="container-fluid bg-dark shadow p-5 text-center text-light">
+            <h5>Nicholas Laswell Copyright 2023©</h5>
+        </div>
+    </body>
+</html></body></html>
